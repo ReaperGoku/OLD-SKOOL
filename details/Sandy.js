@@ -9,11 +9,11 @@ module.exports = {
         .setTitle("Sandy")
         .setColor("00FFFF")
         .setThumbnail(member.user.avatarURL({ format: 'png', dynamic: true }))
-        .addField("IGN:", "SANDY", true)
+        .addField("IGN:", "Ꮇꮢ-Տᴀɴᴅʏ-♪", true)
         .addField("UID:", 88027587, true)
-        .addField("Guild:", "Âкατsuкi", true)
+        .addField("Guild:", "O𝙻𝙳•𝚂𝙺𝙾𝙾𝙻", true)
         .addField("Favorite Weapon:", "SCAR & M1014", true)
-        .setFooter("Pudinaahhhhh");
+        .setFooter("M marathi hu");
     
       message.channel.send(sandy);
     }

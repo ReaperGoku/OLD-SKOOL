@@ -11,7 +11,7 @@ module.exports = {
         .setThumbnail(member.user.avatarURL({ format: 'png', dynamic: true }))
         .addField("IGN:", "Supergirl", true)
         .addField("UID:", "559460306", true)
-        .addField("Guild:", "Âкατsυкi", true)
+        .addField("Guild:", "NOT IN GUILD", true)
         .addField("Favorite Weapon:", "Jisase enemy mar jaye", true);
     
       message.channel.send(bebo);

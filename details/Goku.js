@@ -11,7 +11,7 @@ module.exports = {
         )
         .addField("IGN:", "Rєαpєr☁GoKυ", true)
         .addField("UID:", "22224011", true)
-        .addField("Guild:", "Âкατsuкi", true)
+        .addField("Guild:", "O𝙻𝙳•𝚂𝙺𝙾𝙾𝙻", true)
         .addField("Favorite Weapon:", "Famas & M1887", true);
     
       message.channel.send(goku);

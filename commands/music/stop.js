@@ -5,6 +5,8 @@ module.exports = {
   description : "Stops the music",
 
   run : async(client, message) => {
+
+    if (message.channel.id != "709040972792725557") return;
     
     const serverQueue = message.client.queue.get(message.guild.id);
     let clientVoiceConnection = message.guild.voice.connection

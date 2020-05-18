@@ -9,9 +9,9 @@ module.exports = {
         .setTitle("Deepak")
         .setColor("00FFFF")
         .setThumbnail(member.user.avatarURL({ format: 'png', dynamic: true }))
-        .addField("IGN:", "ᴬᴷ★Dᴇᴇᴩᴀᴋ࿐ ★♬", true)
+        .addField("IGN:", "❖ＤＥＥＰＡＫ❖", true)
         .addField("UID:", "54032086", true)
-        .addField("Guild:", "Âкατsuкi", true)
+        .addField("Guild:", "O𝙻𝙳•𝚂𝙺𝙾𝙾𝙻", true)
         .addField("Favorite Weapon:", "SCAR & MP40", true);
     
       message.channel.send(deepak);

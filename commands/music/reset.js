@@ -9,6 +9,8 @@ module.exports = {
 
     run : async(client, message, args) => {
 
+        if (message.channel.id != "709040972792725557") return;
+
         if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("You don't have premission to do that!");
 
         const serverQueue = message.client.queue.get(message.guild.id);

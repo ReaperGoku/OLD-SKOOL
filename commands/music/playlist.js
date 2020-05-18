@@ -20,9 +20,11 @@ module.exports = {
 
         const channel = message.member.voice.channel;
 
+    if (message.channel.id != "709040972792725557") return;
     if (!args.length)
       return message.channel.send("\`\`\`Usage: /playlist <YouTube Playlist URL | Playlist Name>\`\`\`").catch(console.error);
     if (!channel) return message.channel.send("\`\`\`You need to join a voice channel first!\`\`\`").catch(console.error);
+    
 
     const permissions = channel.permissionsFor(message.client.user);
     if (!permissions.has("CONNECT"))

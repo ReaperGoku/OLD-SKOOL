@@ -10,6 +10,7 @@ module.exports = {
         const serverQueue = message.client.queue.get(message.guild.id);
         let clientVoiceConnection = message.guild.voice.connection
         
+        if (message.channel.id != "709040972792725557") return;
         if (!serverQueue)
         return message.channel.send("\`\`\`There is nothing playing.\`\`\`").catch(console.error);
     

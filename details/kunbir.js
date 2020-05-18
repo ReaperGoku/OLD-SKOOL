@@ -11,7 +11,7 @@ module.exports = {
         .setThumbnail(member.user.avatarURL({ format: 'png', dynamic: true }))
         .addField("IGN:", "AK KUNBIR", true)
         .addField("UID:", "218004519", true)
-        .addField("Guild:", "Âкατsuкi", true)
+        .addField("Guild:", "NOT IN GUILD", true)
         .addField("Favorite Weapon:", "AK47 & MP40", true);
     
         message.channel.send(kunbir);

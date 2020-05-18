@@ -6,6 +6,8 @@ module.exports = {
   usage: "[ Volume 0-100 ]",
 
   run : async(client, message, args) => {
+
+    if (message.channel.id != "709040972792725557") return;
     
     const serverQueue = message.client.queue.get(message.guild.id);
     let clientVoiceConnection = message.guild.voice.connection
