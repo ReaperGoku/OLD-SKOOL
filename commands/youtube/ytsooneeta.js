@@ -17,16 +17,16 @@ module.exports = {
                 channel_id : process.env.SOONEETA,
                 messageTemplate : process.env.MESSAGETEMPLATE,
             };
-            if (db.fetch(`gokuVideos`) === null) db.set(`gokuVideos`, []);
+            if (db.fetch(`sooneetaVideos`) === null) db.set(`sooneetaVideos`, []);
             
             let parser = new Parser();
             let feed = await parser.parseURL(`https://www.youtube.com/feeds/videos.xml?channel_id=${config.channel_id}`);
             
-            if (db.fetch(`gokuVideos`).includes(feed.items[0].link)) return;
+            if (db.fetch(`sooneetaVideos`).includes(feed.items[0].link)) return;
             else {
-                db.set(`gokuvideoData`, feed.items[0]);
-                db.push("gokuVideos", feed.items[0].link);
-                let parsed = db.fetch(`gokuvideoData`);
+                db.set(`sooneetavideoData`, feed.items[0]);
+                db.push("sooneetaVideos", feed.items[0].link);
+                let parsed = db.fetch(`sooneetavideoData`);
                 let channel = client.channels.cache.get("710000703673860126");
                 if (!channel) return;
                 let message = config.messageTemplate

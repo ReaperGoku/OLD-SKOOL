@@ -17,16 +17,16 @@ module.exports = {
                 channel_id : process.env.VINCENZO,
                 messageTemplate : process.env.MESSAGETEMPLATE,
             };
-            if (db.fetch(`gokuVideos`) === null) db.set(`gokuVideos`, []);
+            if (db.fetch(`vinVideos`) === null) db.set(`vinVideos`, []);
             
             let parser = new Parser();
             let feed = await parser.parseURL(`https://www.youtube.com/feeds/videos.xml?channel_id=${config.channel_id}`);
             
-            if (db.fetch(`gokuVideos`).includes(feed.items[0].link)) return;
+            if (db.fetch(`vinVideos`).includes(feed.items[0].link)) return;
             else {
-                db.set(`gokuvideoData`, feed.items[0]);
-                db.push("gokuVideos", feed.items[0].link);
-                let parsed = db.fetch(`gokuvideoData`);
+                db.set(`vinvideoData`, feed.items[0]);
+                db.push("vinVideos", feed.items[0].link);
+                let parsed = db.fetch(`vinvideoData`);
                 let channel = client.channels.cache.get("713767668578254899");
                 if (!channel) return;
                 let message = config.messageTemplate
