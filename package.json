@@ -24,6 +24,7 @@
     "node-fetch": "^2.6.0",
     "quick.db": "^7.0.0-b22",
     "random-puppy": "^1.1.0",
+    "rss-parser": "^3.8.0",
     "simple-youtube-api": "^5.2.1",
     "spotify-web-api-node": "^4.0.0",
     "weather-js": "^2.0.0",
