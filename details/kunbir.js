@@ -9,10 +9,10 @@ module.exports = {
         .setTitle("Kunbir")
         .setColor("00FFFF")
         .setThumbnail(member.user.avatarURL({ format: 'png', dynamic: true }))
-        .addField("IGN:", "AK KUNBIR", true)
+        .addField("IGN:", "OS KUNBIR", true)
         .addField("UID:", "218004519", true)
-        .addField("Guild:", "NOT IN GUILD", true)
-        .addField("Favorite Weapon:", "AK47 & MP40", true);
+        .addField("Guild:", "O𝙻𝙳•𝚂𝙺𝙾𝙾𝙻", true)
+        .addField("Favorite Weapon:", "AN94 & MP40", true);
     
         message.channel.send(kunbir);
     }
